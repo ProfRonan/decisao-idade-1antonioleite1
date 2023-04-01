@@ -1,14 +1,22 @@
-idade = input("digite um número:\n ")
+print ('digite um numero')
+idade = int(input('> '))
 
-if idade.isnumeric():
-    idade = int(idade)
-    if idade < 0:
-        print("impossível!")
-    elif idade < 18:
-        print("não precisa se alistar.")
-    elif 18 < idade < 65:
-        print("Não esqueça de votar na próxima eleição.")
-    elif idade > 65:
-        print("Vá descançar.")
-else:
-    print  ("eita!")
+impossível = False
+menor = False
+maior = False
+velho = False
+print (idade)
+if idade < 0:
+    print('impossível!')
+    impossível = True
+elif idade < 18: 
+    print('não precisa se alistar.')
+    menor = True
+elif 18 < idade < 65: # 18 < idade and idade < 65
+    print('Não esqueça de votar na próxima eleição.')
+    maior =True
+elif idade > 65:
+    print ('pode descansar.')
+    velho = True
+elif not (impossível or menor or maior or velho) :
+    print("eita!")
