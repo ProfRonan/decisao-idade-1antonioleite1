@@ -8,6 +8,7 @@ velho = False
 print (idade)
 if idade < 0:
     print('impossível!')
+    print('não precisa se alistar.')
     impossível = True
 elif idade < 18: 
     print('não precisa se alistar.')
