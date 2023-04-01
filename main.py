@@ -17,7 +17,7 @@ elif 18 < idade < 65: # 18 < idade and idade < 65
     print('Não esqueça de votar na próxima eleição.')
     maior =True
 elif idade > 65:
-    print ('pode descansar.')
+    print ('Vá descansar.')
     velho = True
 elif not (impossível or menor or maior or velho) :
     print("eita!")
